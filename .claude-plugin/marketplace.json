@@ -1,13 +1,21 @@
 {
-  "name": "witness-repro",
-  "owner": {"name": "nirholas"},
+  "name": "witness",
+  "owner": {
+    "name": "nirholas"
+  },
   "description": "Turn a user session into a failing Playwright test.",
   "plugins": [
     {
       "name": "witness-repro",
-      "source": "./",
+      "source": "./plugins/witness-repro",
       "description": "Wire @three-ws/witness into a web app and compile its trace into a red-until-fixed Playwright spec.",
-      "tags": ["playwright", "testing", "bug-report", "repro"]
+      "category": "development",
+      "tags": [
+        "playwright",
+        "testing",
+        "bug-report",
+        "repro"
+      ]
     }
   ]
 }
